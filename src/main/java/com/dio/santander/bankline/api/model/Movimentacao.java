@@ -31,8 +31,8 @@ public class Movimentacao {
 	@Enumerated 
 	private MovimentacaoTipo tipo;
 	
-	
-	
+	@Column(name="idConta")
+	private Integer idConta;
 	
 	
 	
@@ -69,6 +69,13 @@ public class Movimentacao {
 		this.tipo = tipo;
 	}
 	
+	public Integer getIdConta() {
+		return idConta;
+	}
+	
+	public void setIdConta(Integer idConta) {
+		this.idConta = idConta;
+	}
 	
 	
 	
